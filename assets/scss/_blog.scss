@@ -1,0 +1,172 @@
+.blog-area{
+
+    .blog-slider{
+
+        .single-blog-slider{
+            display: flex;
+            align-items: center;
+            
+            .blog-slider-image{
+                margin-right: 10px;
+
+                figcaption {
+                    position: absolute;
+                    background-color: black;
+                    opacity: 0.8;
+                    top: 232px;
+                    text-align: center;
+                    left: 14px;
+                    width: 36%;
+                    font-size: 13px;
+                }
+
+            }
+            .blog-slider-content{
+
+                a{
+                    font-size: 18px;
+                    color: #363636;
+                    padding-bottom: 12px;
+                    display: inline-block;
+                    font-weight: 700;
+                    @include transition(.3s);
+
+                    &:hover{
+                        color: $theme-color;
+                    }
+
+                }
+                p{
+                    text-align: justify;
+                }
+            }
+        }
+
+        .owl-nav{
+
+            .owl-prev{
+                position: absolute;
+                right: 250px;
+                top: -87px;
+                width: 30px;
+                height: 30px;
+                line-height: 24px;
+                border: 1px solid gray;
+                color: gray;
+                font-size: 31px;
+                border-radius: 50%;
+                text-align: center;
+                @include transition(.3s);
+                &:hover{
+                    background-color: $theme-color;
+                    color: $whit-color;
+                }
+            }
+            .owl-next{
+                position: absolute;
+                right: 204px;
+                top: -87px;
+                width: 30px;
+                height: 30px;
+                line-height: 24px;
+                border: 1px solid gray;
+                color: gray;
+                font-size: 31px;
+                border-radius: 50%;
+                text-align: center;
+                @include transition(.3s);
+                &:hover{
+                    background-color: $theme-color;
+                    color: $whit-color;
+                }
+            }
+        }
+    }
+    .testimonial-slider{
+
+        .single-testimonial{
+
+            p {
+                font-size: 17px;
+                text-align: justify;
+                line-height: 26px;
+                position: relative;
+                padding-left: 30px;
+                border-bottom: 1px solid #e5e5e5;
+                padding-bottom: 10px;
+            }
+            i {
+                position: absolute;
+                content: "";
+                font-size: 20px;
+                color: gray;
+            }
+            .testimonial-img-content {
+                display: flex;
+                align-items: center;
+
+                .testimonial-img {
+                    width: 80px;
+                    margin-left: 30px;
+                    margin-right: 20px;
+                }
+                .testimonial-content {
+                    a {
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        color: #363636;
+                        display: inline-block;
+                        span{
+                            display: block;
+                            font-size: 13px;
+                            color: #555;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+
+        .owl-nav{
+
+            .owl-prev{
+                position: absolute;
+                right: 250px;
+                top: -87px;
+                width: 30px;
+                height: 30px;
+                line-height: 24px;
+                border: 1px solid gray;
+                color: gray;
+                font-size: 31px;
+                border-radius: 50%;
+                text-align: center;
+                @include transition(.3s);
+                &:hover{
+                    background-color: $theme-color;
+                    color: $whit-color;
+                }
+            }
+            .owl-next{
+                position: absolute;
+                right: 204px;
+                top: -87px;
+                width: 30px;
+                height: 30px;
+                line-height: 24px;
+                border: 1px solid gray;
+                color: gray;
+                font-size: 31px;
+                border-radius: 50%;
+                text-align: center;
+                @include transition(.3s);
+                &:hover{
+                    background-color: $theme-color;
+                    color: $whit-color;
+                }
+            }
+        }
+    }
+}
+

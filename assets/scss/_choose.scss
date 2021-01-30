@@ -1,0 +1,88 @@
+.choose-area {
+
+    .choose-left{
+
+        .choose-img{
+            position: relative;
+
+            
+            .play-button {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 30px;
+                background-color: $whit-color;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                line-height: 37px;
+
+                i{
+                    color: $theme-color;
+                    margin-left: 19px;
+                    font-size: 16px;
+                }
+
+                &::before, &::after{
+                    position: absolute;
+                    content: "";
+                    border: 2px solid $whit-color;
+                    border-radius: 50%;
+                    top: -20px;
+                    left: -20px;
+                    right: -20px;
+                    bottom: -20px;
+                    animation: animate 1.5s linear infinite;
+                    opacity: 0;
+                }
+
+                &::after{
+                    animation-delay: .5s;
+                }
+
+                @keyframes animate {
+                    0%{
+                       transform: scale(.5);
+                    }
+                    50%{
+                       opacity: 1;
+                    }
+                    100%{
+                       transform: scale(1.5);
+                    }
+                }
+            }
+
+        }
+    }
+    .choose-right {
+
+        .single-choose-content {
+            margin-bottom: 20px;
+            a {
+                font-size: 16px;
+                margin: 0;
+                padding: 0;
+                font-weight: 900;
+                color: #363636;
+                padding-bottom: 10px;
+                @include transition(.3s);
+
+                &:hover{
+                    color: $theme-color;
+                }
+                i {
+                    padding-right: 10px;
+                    font-size: 18px;
+                }
+            }
+            p {
+                font-size: 16px;
+                line-height: 28px;
+            }
+        }
+    }
+}
+

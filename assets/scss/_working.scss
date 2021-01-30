@@ -1,0 +1,51 @@
+.working-area {
+    background-color: $light;
+    .working-content {
+
+        h3 {
+            font-size: 26px;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            display: inline-block;
+    
+            &:hover:before{
+                width: 100%;
+            }
+            &::before {
+                position: absolute;
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: $theme-color;
+                top: 100%;
+                left: 50%;
+                transform: translateX(-50%);
+                @include transition(.5s);
+            }
+            
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.5;
+            color: #555;
+            padding: 20px 0;
+        }
+        a {
+            font-size: 15px;
+            background-color: $theme-color;
+            padding: 15px 38px;
+            display: inline-block;
+            color: #fff;
+            font-weight: 400;
+            letter-spacing: 2px;
+            @include transition(.5s);
+
+            &:hover{
+               background-color: #333;
+            }
+        }
+    }
+}

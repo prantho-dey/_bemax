@@ -1,0 +1,166 @@
+.slider-area{
+
+    .main-slider{
+
+        .main-slider-items{
+            position: relative;
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            &::before{
+                position: absolute;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background-color: $dark;
+                top: 0;
+                left: 0;
+                opacity: .8;
+            }
+        
+            
+            .main-slider-content {
+                position: absolute;
+                content: "";
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+
+                p {
+                    font-size: 30px;
+                    color: $light;
+                    margin: 0;
+                    text-transform: uppercase;
+                    padding: 0;
+                }
+                h2 {
+                    font-size: 72px;
+                    color: $light;
+                    font-weight: 300;
+                    margin: 0;
+                    padding: 30px 0;
+                }
+                a {
+                    color: #fff;
+                    font-size: 15px;
+                    background: #4272d7;
+                    padding: 20px 40px;
+                    font-weight: 700;
+                    text-decoration: $theme-color;
+                    display: inline-block;
+                    margin-top: 10px;
+                    @include transition(.5s);
+
+                    &:hover{
+                        background-color: $heading-color;
+                    }
+                }
+            }
+        }
+
+
+        .owl-nav{
+
+            .owl-prev{
+                position: absolute;
+                left: 100px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                line-height: 30px;
+                background-color: #222;
+                color: #fff;
+                font-size: 30px;
+                @include transition(.3s);
+                font-weight: bold;
+                &:hover{
+                    background-color: $theme-color;
+                }
+            }
+            .owl-next{
+                position: absolute;
+                right: 100px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                line-height: 30px;
+                background-color: #222;
+                color: #fff;
+                font-size: 30px;
+                @include transition(.3s);
+                font-weight: bold;
+                &:hover{
+                    background-color: $theme-color;
+                }
+            }
+        }
+
+
+        .owl-dots{
+
+            position: absolute;
+            content: "";
+            top: 90%;
+            left: 50%;
+            transform: translateX(-50%);
+
+            .owl-dot{
+                width: 15px;
+                height: 15px;
+                margin: 0 2px;
+                border-radius: 100%;
+                // border: 1px solid $light;
+                background-color: $body-color;
+            
+            }
+            .owl-dot.active {
+                background-color: $theme-color !important;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        
+    }
+}
+
+
+.slider-bottom-area{
+    background-color: $theme-color;
+    padding: 30px 0;
+
+    .slider-bottom-area-content{
+        color: $light;
+        font-size: 18px;
+        font-weight: 600;
+
+        span{
+            font-size: 30px;
+        }
+    }
+
+    .slider-bottom-area-box {
+
+        a {
+            font-size: 18px;
+            color: #fff;
+            text-align: center;
+            display: inline-block;
+            border: 2px solid #fff;
+            padding: 15px 50px;
+            @include transition(.3s);
+
+            &:hover{
+
+                background-color: $heading-color;
+            }
+        }
+    }
+}

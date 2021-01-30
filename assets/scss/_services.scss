@@ -1,0 +1,48 @@
+
+
+.services-area {
+    background-color: $light;
+    
+    .single-services{
+        display: flex;
+
+        .services-icon{
+            font-size: 26px;
+            color: #ffffff;
+            position: absolute;
+            background-color: $theme-color;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            @include transition(.3s);
+            &:hover{
+                color: $theme-color;
+                background-color: $whit-color;
+                border: 1px solid $theme-color;
+            }
+        }
+        .services-content{
+            padding-left: 80px;
+            padding-bottom: 50px;
+            
+            h4{
+                font-size: 16px;
+                line-height: 1.5;
+                color: #363636;
+                font-weight: 900;
+                margin-bottom: 6px;
+                cursor: pointer;
+                @include transition(.3s);
+                &:hover{
+                    color: $theme-color;
+                }
+            }
+            p {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+    }
+}
+
